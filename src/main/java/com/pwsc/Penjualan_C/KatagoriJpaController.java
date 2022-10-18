@@ -29,6 +29,11 @@ public class KatagoriJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.pwsc_Penjualan_C_jar_0.0.1-SNAPSHOTPU");
 
+    public KatagoriJpaController() {
+    }
+
+    
+    
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }

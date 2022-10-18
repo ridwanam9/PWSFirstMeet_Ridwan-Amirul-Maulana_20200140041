@@ -27,6 +27,11 @@ public class ReturPembelianJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.pwsc_Penjualan_C_jar_0.0.1-SNAPSHOTPU");
 
+    public ReturPembelianJpaController() {
+    }
+
+    
+    
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }

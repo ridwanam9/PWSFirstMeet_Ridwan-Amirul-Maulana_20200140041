@@ -27,6 +27,11 @@ public class PenjualanJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.pwsc_Penjualan_C_jar_0.0.1-SNAPSHOTPU");
 
+    public PenjualanJpaController() {
+    }
+
+    
+    
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
